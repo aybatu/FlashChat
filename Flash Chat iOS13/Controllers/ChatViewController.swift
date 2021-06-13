@@ -19,6 +19,8 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.barTintColor = UIColor(named: "BrandPurple")
+        navigationController?.navigationBar.tintColor = .white
         navigationItem.hidesBackButton = true
         navigationItem.title = "⚡️FlashChat"
         messageTextfield.delegate = self
